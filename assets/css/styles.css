@@ -21,6 +21,10 @@
     --input-color: hsl(var(--hue-color), 70%, 96%) ;
     --body-color: hsl(var(--hue-color), 60%, 99%) ;
     --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%) ;
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%) ;
+
+
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -77,6 +81,8 @@ body.dark-theme{
      --input-color: hsl(var(--hue-color), 29%, 26%) ;
      --body-color: hsl(var(--hue-color), 28%, 12%) ;
      --container-color: hsl(var(--hue-color), 29%, 16%);
+     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%) ;
+     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%) ;
  
 }
 
@@ -802,7 +808,16 @@ img{
 }
 
 /*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
 
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
